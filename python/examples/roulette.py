@@ -3,8 +3,12 @@ from __future__ import print_function
 import random
 
 
-def get_random(iterations=100, values=2):
-    result = [random.randint(0, 100) for _ in range(iterations)]
+def get_number(number=random.randint(0, 100)):
+    return number
+
+
+def get_random(iterations, values):
+    result = [get_number() for _ in range(iterations)]
     random.shuffle(result)
     return [result[random.randint(0, iterations)] for _ in range(values)]
 
