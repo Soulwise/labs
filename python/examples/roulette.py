@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+from __future__ import print_function
 import random
 
 
@@ -12,3 +14,6 @@ def roulette():
     if values[0] > max(values[1:]):
         return False
     return True
+
+if __name__ == "__main__":
+    print(roulette())
